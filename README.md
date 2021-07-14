@@ -1,4 +1,4 @@
-# Supers Cafe Starter Repo
+# Supers Cafe
 
 ## Table of contents
 * [General info](#general-info)
@@ -6,7 +6,7 @@
 * [www.supers.cafe](https://supers.cafe)
 
 ## General info
-A GIT Starter Repo for Self-Hosted Gatsby/Strapi Based Websites
+This a life/professional portfolio website.
 	
 ## Technologies
 Project is created with:
