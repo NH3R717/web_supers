@@ -11,22 +11,24 @@ const Footer = () => {
   return (
     <Wrapper>
       <footer>
-        <a href="">
-          <Git />
-        </a>
-        <a href="">
-          <LinkedIn />
-        </a>
-        <a href="">
-          <Line />
-        </a>
-        <a href="">
-          <YT />
-        </a>
-        <a href="">
-          <Flickr />
-        </a>
-        <section>
+        <section style={{ marginTop: "2em" }}>
+          <a href="/">
+            <Git className="socialIcon" />
+          </a>
+          <a href="/">
+            <LinkedIn className="socialIcon" />
+          </a>
+          <a href="/">
+            <Line className="socialIcon" />
+          </a>
+          <a href="/">
+            <YT className="socialIcon" />
+          </a>
+          <a href="/">
+            <Flickr className="socialIcon" />
+          </a>
+        </section>
+        <section style={{ marginTop: "2em" }}>
           <p>© Supers Cafe</p>
         </section>
       </footer>
@@ -43,12 +45,21 @@ const Wrapper = styled.section`
     }
     font-family: "Comfortaa";
     color: #5c5c5c;
-    align-items: right;
+    display: flex;
+    justify-content: space-between;
+  }
+  .socialIcon {
+    height: 2em;
+    width: 2em;
+    padding: 0.3em 0.3em 0em 1em;
   }
   p {
-    align-items: right;
+    /* margin-bottom: -2em; */
+    /* align-items: right; */
+    padding: 0 1em 0 0;
   }
   section {
+    margin-top: 2em;
   }
 `
 
