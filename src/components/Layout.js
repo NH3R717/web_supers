@@ -3,7 +3,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 
 import "@csstools/normalize.css"
-import "../assets/css/main.css"
+import "/src/css/main.css"
 
 const Layout = ({ children }) => {
   return (

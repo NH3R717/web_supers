@@ -51,26 +51,26 @@ const Wrapper = styled.section`
     justify-content: center;
     text-align: center;
   }
+  .navIcon {
+    height: 10em;
+    width: 10em;
+    padding: 1em 1em 0em 1em;
+  }
+  /* h3 {
+    margin: 0;
+  }
   a {
-    /* width: 5em;
+    width: 5em;
     height: 2em;
     margin: 1em;
-    padding: 1em; */
+    padding: 1em;
   }
   section {
     color: darkorange;
   }
   .text {
     text-transform: uppercase;
-  }
-  .navIcon {
-    height: 10em;
-    width: 10em;
-    padding: 1em 1em 0em 1em;
-  }
-  h3 {
-    margin: 0;
-  }
+  } */
 `
 
 export default Nav
