@@ -13,7 +13,14 @@ const Header = () => {
 
 const Wrapper = styled.section`
   h1 {
+    @font-face {
+      font-family: "Comfortaa";
+      src: local("Comfortaa"),
+        url(src/assets/font/Comfortaa-VariableFont_wght.ttf) format("truetype");
+    }
+    font-family: "Comfortaa";
     color: #f56546;
+    /* -webkit-text-stroke: 0.02em #5c5c5c; */
   }
 `
 
