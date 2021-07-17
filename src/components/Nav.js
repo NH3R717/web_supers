@@ -1,37 +1,37 @@
 import React from "react"
 import styled from "styled-components"
-import Info from "/src/assets/SVG/info.svg"
-import Instruct from "/src/assets/SVG/instruct.svg"
-import Blog from "/src/assets/SVG/blog.svg"
-import Projects from "/src/assets/SVG/projects.svg"
-import Resume from "/src/assets/SVG/resume.svg"
+import Info from "/src/assets/SVG/nav/info.svg"
+import Instruct from "/src/assets/SVG/nav/instruct.svg"
+import Blog from "/src/assets/SVG/nav/blog.svg"
+import Projects from "/src/assets/SVG/nav/projects.svg"
+import Resume from "/src/assets/SVG/nav/resume.svg"
 
 const Nav = () => {
   return (
     <Wrapper>
       <main>
         <section>
-          <a href="">
+          <a href="/">
             <Info className="navIcon" />
             {/* <h3>Info</h3> */}
           </a>
         </section>
         <section>
-          <a style={{ marginRight: "2.2em", marginTop: "-3.5em" }} href="">
+          <a style={{ marginRight: "2.2em", marginTop: "-3.5em" }} href="/">
             <Instruct className="navIcon" />
             {/* <h3>Instruct</h3> */}
           </a>
-          <a style={{ marginLeft: "2.2em", marginTop: "-3.5em" }} href="">
+          <a style={{ marginLeft: "2.2em", marginTop: "-3.5em" }} href="/">
             <Blog className="navIcon" />
             {/* <h3>Blog</h3> */}
           </a>
         </section>
         <section>
-          <a style={{ marginRight: "-1em", marginTop: "-.8em" }} href="">
+          <a style={{ marginRight: "-1em", marginTop: "-.8em" }} href="/">
             <Projects className="navIcon" />
             {/* <h3>Project</h3> */}
           </a>
-          <a style={{ marginLeft: "-1em", marginTop: "-.8em" }} href="">
+          <a style={{ marginLeft: "-1em", marginTop: "-.8em" }} href="/">
             <Resume className="navIcon" />
             {/* <h3>Resume</h3> */}
           </a>
