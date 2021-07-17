@@ -17,23 +17,23 @@ const Nav = () => {
           </a>
         </section>
         <section>
-          <a style={{ marginRight: "2em" }} href="">
+          <a style={{ marginRight: "2.2em", marginTop: "-3.5em" }} href="">
             <Instruct className="navIcon" />
-            <h3>Instruct</h3>
+            {/* <h3>Instruct</h3> */}
           </a>
-          <a style={{ marginLeft: "2em" }} href="">
+          <a style={{ marginLeft: "2.2em", marginTop: "-3.5em" }} href="">
             <Blog className="navIcon" />
-            <h3>Blog</h3>
+            {/* <h3>Blog</h3> */}
           </a>
         </section>
         <section>
-          <a style={{ marginRight: ".6em" }} href="">
+          <a style={{ marginRight: "-1em", marginTop: "-.8em" }} href="">
             <Projects className="navIcon" />
-            <h3>Project</h3>
+            {/* <h3>Project</h3> */}
           </a>
-          <a style={{ marginLeft: ".6em" }} href="">
+          <a style={{ marginLeft: "-1em", marginTop: "-.8em" }} href="">
             <Resume className="navIcon" />
-            <h3>Resume</h3>
+            {/* <h3>Resume</h3> */}
           </a>
         </section>
       </main>
@@ -64,8 +64,8 @@ const Wrapper = styled.section`
     text-transform: uppercase;
   }
   .navIcon {
-    height: 3em;
-    width: 3em;
+    height: 10em;
+    width: 10em;
     padding: 1em 1em 0em 1em;
   }
   h3 {
