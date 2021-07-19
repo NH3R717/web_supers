@@ -19,7 +19,10 @@ const Wrapper = styled.section`
         url(src/assets/font/Comfortaa-VariableFont_wght.ttf) format("truetype");
     }
     font-family: "Comfortaa";
+    font-size: 2.6em;
     color: #f56546;
+    margin-left: 0.6em;
+
     /* -webkit-text-stroke: 0.02em #5c5c5c; */
   }
 `
