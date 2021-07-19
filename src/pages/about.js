@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { StyledButton } from "../other/button"
 import styled from "styled-components"
 
 const about = () => {
@@ -8,8 +7,7 @@ const about = () => {
     <Layout>
       <Wrapper>
         <div>
-          <h2 className="text">about</h2>
-          <StyledButton>Junk</StyledButton>
+          <h2 className="text">About Page</h2>
         </div>
       </Wrapper>
     </Layout>
