@@ -35,7 +35,7 @@ const Wrapper = styled.section`
     background-color: #a0deb1;
   }
 
-  .flex-container .flex1 {
+  .flex1 {
     background-color: #fbcd5c;
     width: 40em;
     margin: 0.2em;
