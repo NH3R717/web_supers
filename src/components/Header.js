@@ -5,25 +5,48 @@ const Header = () => {
   return (
     <Wrapper>
       <header>
-        <h1>Supers Cafe</h1>
+        <section className="left">
+          <h1>Supers Cafe</h1>
+        </section>
+        <section className="right"></section>
       </header>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
-  h1 {
-    @font-face {
-      font-family: "Comfortaa";
-      src: local("Comfortaa"),
-        url(src/assets/font/Comfortaa-VariableFont_wght.ttf) format("truetype");
+  header {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 -0.6em 2em;
+    padding: 0.5em 0;
+    border-bottom: 2px solid red;
+  }
+  @media all and (max-width: 400px) {
+    h1 {
+      font-size: 1.6em;
     }
+  }
+  @media all and (min-width: 401px) and (max-width: 575px) {
+    h1 {
+      font-size: 2em;
+    }
+  }
+  @media all and (min-width: 576px) {
+    h1 {
+      font-size: 3em;
+    }
+  }
+  h1 {
     font-family: "Comfortaa";
-    font-size: 2.6em;
+    /* font-size: 2.6em; */
     color: #f56546;
     margin-left: 0.6em;
-
-    /* -webkit-text-stroke: 0.02em #5c5c5c; */
+  }
+  .right {
+    /* width: 50%; */
+  }
+  .left {
   }
 `
 
