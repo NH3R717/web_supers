@@ -4,7 +4,9 @@ services:
   web:
     # image: nginx:stable-alpine
     # context: ./
-    dockerfile: Dockerfile
+    build:
+      context: ./
+      dockerfile: Dockerfile
     container_name: web_supers_home
     expose:
       - "80"
