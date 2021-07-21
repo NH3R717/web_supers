@@ -1,13 +1,13 @@
-# FROM node:14.16.0-alpine3.13
+FROM node:14.16.0-alpine3.13
 
-FROM node:alpine as builder
+# FROM node:alpine as builder
 
 WORKDIR /app
 
 WORKDIR /app
 COPY package.json ./
 ## find solution to limit build cpu
-RUN export NODE_OPTIONS=--max_old_space_size=4096
+# RUN export NODE_OPTIONS=--max_old_space_size=4096
 # RUN echo vm.swappiness=05 | sudo tee -a /etc/sysctl.conf
 RUN npm config set registry http://registry.npmjs.org/
 RUN npm install --verbose
