@@ -7,9 +7,9 @@ RUN \
     apt-get -y update && \
     apt-get -y upgrade && \
     apt-get -y install git curl
-ADD folder/.bashrc /root/.bashrc
-WORKDIR /root
-ENV HOME /root
+# ADD folder/.bashrc /root/.bashrc
+# WORKDIR /root
+# ENV HOME /root
 RUN ["bash"]
 
 WORKDIR /app
