@@ -4,10 +4,12 @@ FROM node:alpine as builder
 
 WORKDIR /app
 
+WORKDIR /app
 COPY package.json ./
-RUN npm install
+RUN use npm config set registry http://registry.npmjs.org/
+RUN npm install 
+# RUN npm install –f
 COPY . .
-RUN ["npm", "run", "build"]
 
 FROM nginx
 # EXPOSE 80
