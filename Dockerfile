@@ -6,8 +6,7 @@ FROM node:14.17.3-alpine3.13 AS build
 
 WORKDIR /app
 COPY package.json ./
-RUN ["npm" "config" "set" "registry" "http://registry.npmjs.org/"]
-RUN ["npm" "install" "--verbose"]
+RUN npm install
 COPY . .
 RUN ["npm", "run", "build"]
 
