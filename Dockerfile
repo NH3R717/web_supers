@@ -11,7 +11,11 @@ COPY package.json ./
 # RUN npm cache clean --force
 # RUN npm install --unsafe-perm
 # RUN apt update && apt upgrade
-RUN bash
+RUN \
+    apt-get -y update && \
+    apt-get -y upgrade && \
+    apt-get -y install curl
+ADD folder/.bashrc /root/.bashrc
 RUN curl -sL https://deb.nodesource.com/setup_15x | sudo bash - 
 RUN export NODE_OPTIONS=--max_old_space_size=8192
 # RUN echo vm.swappiness=05 | sudo tee -a /etc/sysctl.conf
