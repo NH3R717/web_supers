@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package.json ./
 ## find solution to limit build cpu
 # RUN npm cache clean --force
-RUN npm install --unsafe-perm
+# RUN npm install --unsafe-perm
 RUN export NODE_OPTIONS=--max_old_space_size=8192
 # RUN echo vm.swappiness=05 | sudo tee -a /etc/sysctl.conf
 RUN npm config set registry http://registry.npmjs.org/
