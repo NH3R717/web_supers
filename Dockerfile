@@ -1,4 +1,4 @@
-FROM node:16-alpine
+FROM buster
 # FROM node:14.16.0-alpine3.13
 
 # FROM node:alpine as builder
@@ -10,6 +10,8 @@ COPY package.json ./
 ## find solution to limit build cpu
 # RUN npm cache clean --force
 # RUN npm install --unsafe-perm
+# RUN apt update && apt upgrade
+RUN curl -sL https://deb.nodesource.com/setup_15x | sudo bash - 
 RUN export NODE_OPTIONS=--max_old_space_size=8192
 # RUN echo vm.swappiness=05 | sudo tee -a /etc/sysctl.conf
 RUN npm config set registry http://registry.npmjs.org/
