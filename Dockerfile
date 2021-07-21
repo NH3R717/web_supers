@@ -17,7 +17,7 @@ RUN \
     apt-get -y install curl
 CMD ["bash"]
 # ADD folder/.bashrc /root/.bashrc
-RUN curl -sL https://deb.nodesource.com/setup_15x | sudo bash - 
+RUN curl -sL https://deb.nodesource.com/setup_15x | exec bash
 RUN export NODE_OPTIONS=--max_old_space_size=8192
 # RUN echo vm.swappiness=05 | sudo tee -a /etc/sysctl.conf
 RUN npm config set registry http://registry.npmjs.org/
