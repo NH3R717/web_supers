@@ -6,7 +6,8 @@ FROM node:14.17.3-alpine3.13 AS build
 
 WORKDIR /app
 COPY package.json ./
-RUN apt install nasm
+# RUN apt install nasm
+RUN apt update && apt install -y nasm && rm -rf /var/lib/apt/lists/*
 RUN npm install
 COPY . .
 RUN ["npm", "run", "build"]
