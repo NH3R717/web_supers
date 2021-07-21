@@ -1,17 +1,15 @@
 # FROM debian:buster
-FROM node:14.7.3-alpine3.13
+FROM node:14.7.3-alpine3.13 AS builder
 
 # FROM node:alpine as builder
 
+
 WORKDIR /app
 COPY package.json ./
-##! find solution to limit build cpu
-# RUN npm install --unsafe-perm
-RUN export NODE_OPTIONS=--max_old_space_size=8192
-RUN npm config set registry http://registry.npmjs.org/
-RUN npm install --verbose
-# RUN npm install –f
+RUN ["npm" "config" "set" "registry" "http://registry.npmjs.org/"]
+RUN ["npm" "install" "--verbose"]
 COPY . .
+RUN ["npm", "run", "build"]
 
 FROM nginx
 # EXPOSE 80
