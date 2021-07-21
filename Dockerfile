@@ -6,11 +6,14 @@ WORKDIR /app
 
 WORKDIR /app
 COPY package.json ./
+## find solution to limit build cpu
 RUN npm config set registry http://registry.npmjs.org/
-RUN npm install 
+RUN npm install --verbose
 # RUN npm install –f
 COPY . .
 
 FROM nginx
 # EXPOSE 80
 COPY --from=builder /app/public /usr/share/nginx/html
+
+# https://stackoverflow.com/questions/18419144/npm-not-working-read-econnreset
