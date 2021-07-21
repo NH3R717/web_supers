@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "COMMENT": "!! gatsby build – serve to preview deployed page",
+    "#COMMENT": "!! gatsby build – serve to preview deployed page",
     "build": "gatsby build",
     "develop": "gatsby clean && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
