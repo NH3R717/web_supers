@@ -51,6 +51,6 @@ sudo curl -L https://raw.githubusercontent.com/NH3R717/VPS_Scripts/master/web/we
 ###################################*
 
 #! Run from SSH
-# sudo curl -L https://raw.githubusercontent.com/NH3R717/Wagui-Restaurant/dev/web_supers_home_install.sh | exec bash
+# sudo curl -L https://raw.githubusercontent.com/NH3R717/web_supers_home/dev/web_supers_home_install.sh | exec bash
 #! Run from SSH
-# sudo docker stop web_wagui && sudo docker container prune && sudo docker image prune && sudo rm -rf ~/Docker/Wagui
+# sudo docker stop web_supers_home && sudo docker container prune && sudo docker image prune && sudo rm -rf ~/Docker/${PROJECT_NAME}
