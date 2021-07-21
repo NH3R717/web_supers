@@ -3,6 +3,15 @@ FROM debian:buster
 
 # FROM node:alpine as builder
 
+RUN \
+    apt-get -y update && \
+    apt-get -y upgrade && \
+    apt-get -y install git curl
+ADD folder/.bashrc /root/.bashrc
+WORKDIR /root
+ENV HOME /root
+RUN ["bash"]
+
 WORKDIR /app
 
 WORKDIR /app
@@ -11,11 +20,6 @@ COPY package.json ./
 # RUN npm cache clean --force
 # RUN npm install --unsafe-perm
 # RUN apt update && apt upgrade
-RUN \
-    apt-get -y update && \
-    apt-get -y upgrade && \
-    apt-get -y install curl
-CMD ["bash"]
 # ADD folder/.bashrc /root/.bashrc
 RUN curl -sL https://deb.nodesource.com/setup_15x | exec bash
 RUN export NODE_OPTIONS=--max_old_space_size=8192
