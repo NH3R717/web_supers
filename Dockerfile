@@ -1,5 +1,5 @@
 # FROM debian:buster
-FROM node:14.7.3-alpine3.13 AS builder
+FROM node:14.17.3-alpine3.13 AS build
 
 # FROM node:alpine as builder
 
