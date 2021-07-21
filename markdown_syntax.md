@@ -1,39 +1,47 @@
 # Basic
 
-Heading 	
-# H1
-## H2
-### H3
-Bold 	**bold text**
-Italic 	*italicized text*
-Blockquote 	> blockquote
+Heading
 
-Ordered List 	
+# H1
+
+## H2
+
+### H3
+
+Bold **bold text**
+Italic _italicized text_
+Blockquote > blockquote
+
+Ordered List
+
 1. First item
 2. Second item
 3. Third item
-Unordered List 	
+   Unordered List
+
 - First item
 - Second item
 - Third item
 
-Code 	`code`
+Code `code`
 
-Horizontal Rule 	---
+Horizontal Rule ---
 
-Link 	[title](https://www.example.com)
+Link [title](https://www.example.com)
 
-Image 	![alt text](image.jpg)
+Image ![alt text](image.jpg)
 
 # Extended Syntax
 
-## Table 	
-| Syntax | Description |
-| ----------- | ----------- |
-| **Header** | **Title** |
-| Paragraph | Text |
+## Table
 
-## Fenced Code Block 	
+| Syntax     | Description |
+| ---------- | ----------- |
+| **Header** | **Title**   |
+| Paragraph  | Text        |
+
+## Fenced Code Block
+
 ```
 {
   "Code": "John",
@@ -42,29 +50,35 @@ Image 	![alt text](image.jpg)
 }
 ```
 
-## Footnote 	
+## Footnote
+
 Here's a sentence with a footnote. [^1]
 [^1]: This is the footnote.
 
-## Heading ID 	
+## Heading ID
+
 [Basic](#Basic)
 
 [Extended Syntax](#Extended-Syntax)
 
- 	term
-: definition 
+term
+: definition
 
-## Strikethrough 	
+## Strike through
+
 ~~The world is flat.~~
 
-## Task List 	
+## Task List
+
 - [x] Write the press release
 - [ ] Update the website
 - [ ] Contact the media
 
 ## Line Break
+
 Some text with \
 a line break.
 
 ## Link to More Markdown
+
 [Markdown Webpage](https://www.markdownguide.org/extended-syntax/#heading-ids)
