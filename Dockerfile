@@ -14,6 +14,6 @@ RUN ["npm", "run", "build"]
 
 FROM nginx
 # EXPOSE 80
-COPY --from=builder /app/public /usr/share/nginx/html
+COPY --from=build /app/public /usr/share/nginx/html
 
 # https://stackoverflow.com/questions/18419144/npm-not-working-read-econnreset
