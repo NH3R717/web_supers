@@ -1,13 +1,13 @@
 version: "3"
 
 services:
-  web:
-    # image: nginx:stable-alpine
+  web_home:
+    image: nginx:stable-alpine
     # context: ./
-    build:
-      context: ./
-      dockerfile: Dockerfile
-    container_name: web_supers_home
+    # build:
+    #   context: ./
+    #   dockerfile: Dockerfile
+    # container_name: web_supers_home
     expose:
       - "80"
     environment:
@@ -17,7 +17,7 @@ services:
       - LETSENCRYPT_EMAIL=${DEFAULT_EMAIL}
       - DEBUG=1
     volumes:
-      # - ${CONTAINER_DIR}/public:/usr/share/nginx/html:ro
+      - ${CONTAINER_DIR}/site:/usr/share/nginx/html:ro
       - conf:/etc/nginx/conf.d
       - certs:/etc/nginx/certs
     restart: unless-stopped
