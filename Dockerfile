@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package.json ./
 # RUN apt install nasm
 RUN apt-get clean && apt-get update && apt-get install -y nasm && rm -rf /var/lib/apt/lists/*
-RUN npm install
+RUN npm install --verbose
 COPY . .
 RUN ["npm", "run", "build"]
 
