@@ -2,7 +2,7 @@ import React from "react"
 import Less from "/src/other/Less.js"
 
 import Layout from "/src/components/Layout.js"
-import { StyledButton } from "/src/other/Button.js"
+// import { StyledButton } from "/src/other/Button.js"
 import styled from "styled-components"
 
 const index = () => {
@@ -12,7 +12,7 @@ const index = () => {
         <span>
           <p>Direct page url in the page folder</p>
         </span>
-        <StyledButton>CLE</StyledButton>
+        {/* <StyledButton>CLE</StyledButton> */}
         <Less />
       </Layout>
     </Wrapper>
