@@ -44,7 +44,7 @@ echo \
 '
 
 # run web_up script w/ ENV
-sudo curl -L https://raw.githubusercontent.com/NH3R717/VPS_Scripts/dev/web/web_gatsby_up.sh | exec bash
+sudo curl -L https://raw.githubusercontent.com/NH3R717/VPS_Scripts/master/web/web_gatsby_up.sh | exec bash
 
 ###################################*
 ### Useful Commands & Notes here ###
