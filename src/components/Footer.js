@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Git from "/src/assets/SVG/footer/Git.svg"
 import LinkedIn from "/src/assets/SVG/footer/LinkedIn.svg"
 import Line from "/src/assets/SVG/footer/Line.svg"
-import YT from "/src/assets/SVG/footer/YT.svg"
+import Yt from "/src/assets/SVG/footer/YT.svg"
 import Flickr from "/src/assets/SVG/footer/Flickr.svg"
 
 const Footer = () => {
@@ -23,7 +23,7 @@ const Footer = () => {
               <Line className="socialIcon" />
             </a>
             <a href="https://www.youtube.com/channel/UC3vEEPENX59c2vOCvse-ttw">
-              <YT className="socialIcon" />
+              <Yt className="socialIcon" />
             </a>
             <a href="https://www.flickr.com/photos/tommybahama604/">
               <Flickr className="socialIcon" />
@@ -40,7 +40,7 @@ const Footer = () => {
 
 const Wrapper = styled.section`
   footer {
-    font-family: "Comfortaa";
+    /* font-family: "Comfortaa"; */
     color: #5c5c5c;
     display: flex;
     /* width: 100%; */
@@ -53,7 +53,7 @@ const Wrapper = styled.section`
     /* display: flex; */
   }
   .socialContainer {
-    width: 20em;
+    width: 30em;
     margin: 0em 1em;
     align-items: center;
   }
@@ -67,8 +67,8 @@ const Wrapper = styled.section`
     height: 100%;
   }
   .socialIcon {
-    height: 2em;
-    width: 2em;
+    height: 3.5em;
+    width: 3.5em;
 
     /* padding: 0.3em 0.3em 0em 1em; */
     justify-content: space-between;
