@@ -7,7 +7,7 @@ import Blog from "/src/assets/SVG/nav/blog.svg"
 import Projects from "/src/assets/SVG/nav/projects.svg"
 import Resume from "/src/assets/SVG/nav/resume.svg"
 
-import NavGroup from "/src/assets/SVG/nav/navGroup.svg"
+// import NavGroup from "/src/assets/SVG/nav/navGroup.svg"
 
 const Nav = () => {
   return (
@@ -18,25 +18,25 @@ const Nav = () => {
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
             metadata=""
-            viewBox="0 0 572 572"
+            viewBox="0 0 647 647"
           >
             <defs> </defs>
             <title> Supers Cafe | Interactive Menu</title>
-            {/* <NavGroup /> */}
             <g>
-              <a href="">
+              {/* <NavGroup /> */}
+              <a href="/">
                 <Info />
               </a>
-              <a href="">
+              <a href="https://instruct.supers.cafe">
                 <Instruct />
               </a>
-              <a href="">
+              <a href="https://blog.supers.cafe">
                 <Blog />
               </a>
-              <a href="">
+              <a href="https://projects.supers.cafe">
                 <Projects />
               </a>
-              <a href="">
+              <a href="https://resume.supers.cafe">
                 <Resume />
               </a>
             </g>
