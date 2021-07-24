@@ -49,8 +49,19 @@ const Wrapper = styled.section`
     margin: 1.8em -0.6em;
     /* padding: 0.5em; */
     border-top: 2px solid red;
-
-    /* display: flex; */
+  }
+  /* display: flex; */
+  @media all and (max-width: 400px) {
+    .socialIcon {
+      height: 2.5em;
+      width: 2.5em;
+    }
+  }
+  @media all and (min-width: 401px) {
+    .socialIcon {
+      height: 3.5em;
+      width: 3.5em;
+    }
   }
   .socialContainer {
     width: 30em;
@@ -67,10 +78,7 @@ const Wrapper = styled.section`
     height: 100%;
   }
   .socialIcon {
-    height: 3.5em;
-    width: 3.5em;
-
-    /* padding: 0.3em 0.3em 0em 1em; */
+    padding: 0.3em 0.4em 0em 0.4em;
     justify-content: space-between;
   }
   p {
