@@ -63,6 +63,3 @@ const Wrapper = styled.section`
 `
 
 export default Nav
-
-// notes
-// viewBox="0 0 512 512"
