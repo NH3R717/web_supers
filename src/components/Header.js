@@ -1,12 +1,19 @@
 import React from "react"
 import styled from "styled-components"
 
+import LogoFull from "/src/assets/SVG/header/scLogoFull.svg"
+import LogoMini from "/src/assets/SVG/header/scLogoMini.svg"
+
 const Header = () => {
   return (
     <Wrapper>
       <header>
         <section className="left">
-          <h1>Supers Cafe</h1>
+          <a href="/">
+            <LogoFull id="fullLogo" />
+            <LogoMini id="miniLogo" />
+          </a>
+          {/* <h1>Supers Cafe</h1> */}
         </section>
         <section className="right"></section>
       </header>
@@ -23,25 +30,24 @@ const Wrapper = styled.section`
     border-bottom: 2px solid red;
   }
   @media all and (max-width: 400px) {
-    h1 {
-      font-size: 1.6em;
+    #fullLogo {
+      display: none;
+    }
+    .left {
+      margin: 0.2em 0 0 2em;
     }
   }
-  @media all and (min-width: 401px) and (max-width: 575px) {
-    h1 {
-      font-size: 2em;
+  @media all and (min-width: 401px) {
+    #miniLogo {
+      display: none;
+    }
+    .left {
+      margin: 0.6em 3em 0 2em;
     }
   }
-  @media all and (min-width: 576px) {
-    h1 {
-      font-size: 3em;
-    }
-  }
-  h1 {
-    font-family: "Comfortaa";
-    /* font-size: 2.6em; */
-    color: #f56546;
-    margin-left: 0.6em;
+  a {
+    height: 3em;
+    padding-top: 2.5em;
   }
   .right {
     /* width: 50%; */
