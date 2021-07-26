@@ -73,5 +73,6 @@ notes.md
 markdown_syntax.md
 .vscode
 /shell
+/other
 
 # /src/other/Button.js
