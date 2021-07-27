@@ -1,11 +1,11 @@
-import React from "react"
-import styled from "styled-components"
+import React from "react";
+import styled from "styled-components";
 
-import Git from "/src/assets/SVG/footer/Git.svg"
-import LinkedIn from "/src/assets/SVG/footer/LinkedIn.svg"
-import Line from "/src/assets/SVG/footer/Line.svg"
-import Yt from "/src/assets/SVG/footer/YT.svg"
-import Flickr from "/src/assets/SVG/footer/Flickr.svg"
+import Git from "/src/assets/SVG/footer/Git.svg";
+import LinkedIn from "/src/assets/SVG/footer/LinkedIn.svg";
+import Line from "/src/assets/SVG/footer/Line.svg";
+import Yt from "/src/assets/SVG/footer/YT.svg";
+import Flickr from "/src/assets/SVG/footer/Flickr.svg";
 
 const Footer = () => {
   return (
@@ -35,8 +35,8 @@ const Footer = () => {
         </div> */}
       </footer>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.section`
   footer {
@@ -97,6 +97,6 @@ const Wrapper = styled.section`
     justify-content: space-between;
     margin-top: 1em;
   }
-`
+`;
 
-export default Footer
+export default Footer;
