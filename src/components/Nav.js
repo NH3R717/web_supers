@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
-import Info from "/src/assets/SVG/nav/info.svg";
-import Instruct from "/src/assets/SVG/nav/instruct.svg";
-import Blog from "/src/assets/SVG/nav/blog.svg";
-import Projects from "/src/assets/SVG/nav/projects.svg";
-import Resume from "/src/assets/SVG/nav/resume.svg";
+import Info from "/src/assets/SVG/nav/info.svg"
+import Instruct from "/src/assets/SVG/nav/instruct.svg"
+import Blog from "/src/assets/SVG/nav/blog.svg"
+import Projects from "/src/assets/SVG/nav/projects.svg"
+import Resume from "/src/assets/SVG/nav/resume.svg"
 
 // import NavGroup from "/src/assets/SVG/nav/navGroup.svg"
 
@@ -44,8 +44,8 @@ const Nav = () => {
         </div>
       </main>
     </Wrapper>
-  );
-};
+  )
+}
 
 const Wrapper = styled.section`
   /* background-color: pink; */
@@ -60,6 +60,6 @@ const Wrapper = styled.section`
     padding: 0 20px;
     box-sizing: border-box;
   }
-`;
+`
 
-export default Nav;
+export default Nav
