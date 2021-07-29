@@ -1,11 +1,13 @@
-import React from "react"
-import styled from "styled-components"
+//! edit from web_supers/src_shared – run command "npm run rsync"
 
-import Git from "./footer/Git.svg"
-import LinkedIn from "./footer/LinkedIn.svg"
-import Line from "./footer/Line.svg"
-import Yt from "./footer/YT.svg"
-import Flickr from "./footer/Flickr.svg"
+import React from "react";
+import styled from "styled-components";
+
+import Git from "./footer/Git.svg";
+import LinkedIn from "./footer/LinkedIn.svg";
+import Line from "./footer/Line.svg";
+import Yt from "./footer/YT.svg";
+import Flickr from "./footer/Flickr.svg";
 
 const Footer = () => {
   return (
@@ -35,8 +37,8 @@ const Footer = () => {
         </div> */}
       </footer>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.section`
   footer {
@@ -97,8 +99,8 @@ const Wrapper = styled.section`
     justify-content: space-between;
     margin-top: 1em;
   }
-`
+`;
 
-export default Footer
+export default Footer;
 
 // some junk

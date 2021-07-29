@@ -1,0 +1,21 @@
+{
+  "name": "web_supers",
+  "version": "1.0.0",
+  "description": "## Repo for https://super.cafe",
+  "main": "index.js",
+  "scripts": {
+    "rsync": "rsync -rvzpeu --delete ./src_shared/ ./NavHub/src/shared && rsync -rvzpeu --delete ./src_shared/ ./Blog/src/shared",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NH3R717/web_supers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NH3R717/web_supers"
+  },
+  "homepage": "https://github.com/NH3R717/web_supers/blob/master/README.md"
+}
