@@ -57,7 +57,7 @@ const Wrapper = styled.section`
   .viewbox_container {
     /* width: 100%; */
     max-width: 960px;
-    margin: 5em auto;
+    margin: 5.5em auto;
     padding: 0 1.5em;
     box-sizing: border-box;
   }

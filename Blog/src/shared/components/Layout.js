@@ -13,9 +13,11 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <Wrapper>
         <Header />
-        <div className="content_push">
-          <div className="site_content">{children}</div>
-        </div>
+        {/* below doesnt work with Safari */}
+        {/* <section className="content_push">
+          <article className="site_content">{children}</article>
+        </section> */}
+        {children}
         <Footer />
       </Wrapper>
     </React.Fragment>
