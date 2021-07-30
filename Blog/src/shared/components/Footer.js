@@ -3,6 +3,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import SiteWarning from "/src/shared/assets/svg/footer/SUD.svg";
+
 import Git from "/src/shared/assets/svg/footer/Git.svg";
 import LinkedIn from "/src/shared/assets/svg/footer/LinkedIn.svg";
 import Line from "/src/shared/assets/svg/footer/Line.svg";
@@ -14,6 +16,12 @@ import SocialGroup from "/src/shared/assets/svg/footer/SocialGroup.svg";
 const Footer = () => {
   return (
     <Wrapper>
+      <section id="siteUnderDevContainer">
+        {/* <span id="siteUnderDevLeft">
+          <SiteWarning id="siteUnderDev" />
+        </span> */}
+        {/* <div id="siteUnderDevRight"> </div> */}
+      </section>
       <footer>
         <div className="socialContainer">
           {/* <div className="iconContainer"> */}
@@ -62,22 +70,42 @@ const Wrapper = styled.section`
     display: flex;
     /* width: 100%; */
     justify-content: center;
-    /* margin-top: 2em; */
-    margin: 1.8em -0.6em;
-    /* padding: 0.5em; */
+    margin: -1.2em -0.6em 1.8em -0.6em;
+    /* margin: 1.8em -0.6em; */
     border-top: 2px solid red;
+  }
+  a {
+    height: 100%;
+  }
+  p {
+    padding: 0 1em 0 0;
+    float: right;
+  }
+  /* .copyContainer {
+    margin-top: 1.5em;
+    float: right;
+  } */
+  section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1em;
   }
   /* display: flex; */
   @media all and (max-width: 400px) {
-    .socialIcon {
+    /* .socialIcon {
       height: 2.5em;
       width: 2.5em;
+    } */
+    #siteUnderDevLeft {
     }
   }
   @media all and (min-width: 401px) {
-    .socialIcon {
+    /* .socialIcon {
       height: 3.5em;
       width: 3.5em;
+    } */
+    #siteUnderDevLeft {
     }
   }
   .socialContainer {
@@ -91,31 +119,30 @@ const Wrapper = styled.section`
     width: 100%;
     justify-content: space-between;
   }
-  a {
-    height: 100%;
-  }
   .socialIcon {
     padding: 0.3em 0.4em 0em 0.4em;
     justify-content: space-between;
   }
-  p {
-    padding: 0 1em 0 0;
-    float: right;
-    /* margin-bottom: -2em; */
-    /* float: right; */
-  }
-  /* .copyContainer {
-    margin-top: 1.5em;
-    float: right;
+  /* #siteUnderDevContainer {
+    width: 20em;
+    /* align-items: left; */
   } */
-  section {
+  /* #siteUnderDevLeft {
     display: flex;
+    margin-top: -2em;
+    padding: 0 0 2em 2em;
+    /* width: 100%; */
+    justify-content: left;
+  } */
+  /* #siteUnderDevRight {
     width: 100%;
-    justify-content: space-between;
-    margin-top: 1em;
-  }
+  } */
+  /* #siteUnderDev {
+    display: flex;
+    margin-top: 2em;
+    width: 100%;
+    justify-content: left;
+  } */
 `;
 
 export default Footer;
-
-// some junk
