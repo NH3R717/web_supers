@@ -3,35 +3,50 @@
 import React from "react";
 import styled from "styled-components";
 
-import Git from "./footer/Git.svg";
-import LinkedIn from "./footer/LinkedIn.svg";
-import Line from "./footer/Line.svg";
-import Yt from "./footer/YT.svg";
-import Flickr from "./footer/Flickr.svg";
+import Git from "/src/shared/assets/svg/footer/Git.svg";
+import LinkedIn from "/src/shared/assets/svg/footer/LinkedIn.svg";
+import Line from "/src/shared/assets/svg/footer/Line.svg";
+import Yt from "/src/shared/assets/svg/footer/YT.svg";
+import Flickr from "/src/shared/assets/svg/footer/Flickr.svg";
+
+import SocialGroup from "/src/shared/assets/svg/footer/SocialGroup.svg";
 
 const Footer = () => {
   return (
     <Wrapper>
       <footer>
         <div className="socialContainer">
-          <div className="iconContainer">
-            <a href="https://github.com/NH3R717">
-              <Git className="socialIcon" />
-            </a>
-            <a href="https://www.linkedin.com/in/tomas-umholtz/">
-              <LinkedIn className="socialIcon" />
-            </a>
-            <a href="/">
-              <Line className="socialIcon" />
-            </a>
-            <a href="https://www.youtube.com/channel/UC3vEEPENX59c2vOCvse-ttw">
-              <Yt className="socialIcon" />
-            </a>
-            <a href="https://www.flickr.com/photos/tommybahama604/">
-              <Flickr className="socialIcon" />
-            </a>
-          </div>
+          {/* <div className="iconContainer"> */}
+          <svg
+            className="iconContainer"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            metadata=""
+            viewBox="0 0 505 65"
+          >
+            <defs> </defs>
+            <title> Supers Cafe | Social Links</title>
+            <g>
+              <SocialGroup />
+              <a href="https://github.com/NH3R717">
+                <Git className="socialIcon" />
+              </a>
+              <a href="https://www.linkedin.com/in/tomas-umholtz/">
+                <LinkedIn className="socialIcon" />
+              </a>
+              <a href="/">
+                <Line className="socialIcon" />
+              </a>
+              <a href="https://www.youtube.com/channel/UC3vEEPENX59c2vOCvse-ttw">
+                <Yt className="socialIcon" />
+              </a>
+              <a href="https://www.flickr.com/photos/tommybahama604/">
+                <Flickr className="socialIcon" />
+              </a>
+            </g>
+          </svg>
         </div>
+        {/* </div> */}
         {/* <div className="copyContainer">
           <p>© Supers Cafe</p>
         </div> */}

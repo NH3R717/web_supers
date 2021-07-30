@@ -1,8 +1,10 @@
-import React from "react"
-import styled from "styled-components"
+//! edit from web_supers/src_shared – run command "npm run rsync"
 
-import LogoFull from "/src/assets/SVG/header/scLogoFull.svg"
-import LogoMini from "/src/assets/SVG/header/scLogoMini.svg"
+import React from "react";
+import styled from "styled-components";
+
+import LogoFull from "/src/shared/assets/svg/header/scLogoFull.svg";
+import LogoMini from "/src/shared/assets/svg/header/scLogoMini.svg";
 
 const Header = () => {
   return (
@@ -18,8 +20,8 @@ const Header = () => {
         <section className="right"></section>
       </header>
     </Wrapper>
-  )
-}
+  );
+};
 
 const Wrapper = styled.section`
   header {
@@ -54,6 +56,6 @@ const Wrapper = styled.section`
   }
   .left {
   }
-`
+`;
 
-export default Header
+export default Header;

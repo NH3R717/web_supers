@@ -1,9 +1,11 @@
-import React from "react"
-import Header from "./Header"
-import Footer from "./Footer"
+//! edit from web_supers/src_shared – run command "npm run rsync"
 
-import "@csstools/normalize.css"
-import "/src/css/main.css"
+import React from "react";
+import Header from "./Header";
+import Footer from "./Footer";
+
+import "@csstools/normalize.css";
+import "/src/shared/css/main.css";
 
 const Layout = ({ children }) => {
   return (
@@ -12,7 +14,7 @@ const Layout = ({ children }) => {
       {children}
       <Footer />
     </React.Fragment>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
