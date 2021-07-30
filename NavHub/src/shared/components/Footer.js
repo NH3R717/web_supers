@@ -16,12 +16,12 @@ import SocialGroup from "/src/shared/assets/svg/footer/SocialGroup.svg";
 const Footer = () => {
   return (
     <Wrapper>
-      <section id="siteUnderDevContainer">
-        {/* <span id="siteUnderDevLeft">
+      {/* <section id="siteUnderDevContainer">
+        <span id="siteUnderDevLeft">
           <SiteWarning id="siteUnderDev" />
-        </span> */}
-        {/* <div id="siteUnderDevRight"> </div> */}
-      </section>
+        </span>
+        <div id="siteUnderDevRight"> </div>
+      </section> */}
       <footer>
         <div className="socialContainer">
           {/* <div className="iconContainer"> */}
@@ -68,11 +68,14 @@ const Wrapper = styled.section`
     /* font-family: "Comfortaa"; */
     color: #5c5c5c;
     display: flex;
+    /* height: 588px; */
     /* width: 100%; */
     justify-content: center;
-    margin: -1.2em -0.6em 1.8em -0.6em;
+    margin: -1.4em -0.6em 1.8em -0.6em;
     /* margin: 1.8em -0.6em; */
     border-top: 2px solid red;
+    /* position: fixed;
+    bottom: 0; */
   }
   a {
     height: 100%;
@@ -97,21 +100,24 @@ const Wrapper = styled.section`
       height: 2.5em;
       width: 2.5em;
     } */
-    #siteUnderDevLeft {
-    }
+    /* #siteUnderDevLeft {
+      height: auto;
+      width: 60em;
+    } */
   }
   @media all and (min-width: 401px) {
     /* .socialIcon {
       height: 3.5em;
       width: 3.5em;
     } */
-    #siteUnderDevLeft {
-    }
+    /* #siteUnderDevLeft {
+    } */
   }
   .socialContainer {
     width: 30em;
     margin: 0em 1em;
     align-items: center;
+    /* flex-shrink: 0; */
   }
   .iconContainer {
     display: flex;
@@ -125,13 +131,12 @@ const Wrapper = styled.section`
   }
   /* #siteUnderDevContainer {
     width: 20em;
-    /* align-items: left; */
   } */
   /* #siteUnderDevLeft {
     display: flex;
     margin-top: -2em;
     padding: 0 0 2em 2em;
-    /* width: 100%; */
+    width: 100%;
     justify-content: left;
   } */
   /* #siteUnderDevRight {

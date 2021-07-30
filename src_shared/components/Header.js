@@ -27,7 +27,7 @@ const Wrapper = styled.section`
   header {
     display: flex;
     flex-wrap: nowrap;
-    margin: 0 -0.6em 2em;
+    margin: 0 -0.6em -1em;
     padding: 0.2em 0 0.5em 0;
     border-bottom: 2px solid red;
   }

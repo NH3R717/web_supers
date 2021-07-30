@@ -49,16 +49,19 @@ const Nav = () => {
 
 const Wrapper = styled.section`
   /* background-color: pink; */
-  main {
+  nav {
     /* display: flex; */
   }
   .viewbox_container {
     position: relative;
+    /* flex: 1 0 auto; */
+    /* height: 100%; */
     width: 100%;
     max-width: 960px;
     margin: 5em auto;
-    padding: 0 20px;
+    padding: 0 1.5em;
     box-sizing: border-box;
+    /* min-height: calc(100vh - 588px); */
   }
 `
 
