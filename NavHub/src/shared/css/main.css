@@ -1,12 +1,15 @@
 :root {
+  height: 100%;
   --ff-primary: "Comfortaa", sans-serif;
   background-color: rgba(251, 205, 92, 0.03);
 }
 html body {
   /* height: 100%; */
+  /* margin: auto 0; */
 }
 
 body {
   /* display: flex;
+  min-height: 100vh;
   flex-direction: column; */
 }
