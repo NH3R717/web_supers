@@ -12,11 +12,11 @@ const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <Wrapper>
+        <Header />
         <div className="content_push">
-          <Header />
           <div className="site_content">{children}</div>
-          <Footer />
         </div>
+        <Footer />
       </Wrapper>
     </React.Fragment>
   );
@@ -26,11 +26,15 @@ const Wrapper = styled.section`
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    justify-content: space-around;
   }
 
   .site_content {
     /* height: 100vh; */
-    flex-grow: 1;
+    /* flex-grow: 1; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
 `;
 
