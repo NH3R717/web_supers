@@ -1,7 +1,7 @@
 import React from "react"
 import Less from "/src/other/Less.js"
 
-import Layout from "/src/components/Layout.js"
+import Layout from "/src/shared/components/Layout.js"
 // import { StyledButton } from "/src/other/Button.js"
 import styled from "styled-components"
 
