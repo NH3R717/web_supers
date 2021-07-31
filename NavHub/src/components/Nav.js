@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
+import Modal from "react-modal"
 import styled from "styled-components"
 
 import Info from "/src/assets/svg/nav/info.svg"
@@ -10,9 +11,24 @@ import Resume from "/src/assets/svg/nav/resume.svg"
 // import NavGroup from "/src/assets/SVG/nav/navGroup.svg"
 
 const Nav = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false)
   return (
     <Wrapper>
       <nav className="viewbox_container">
+        <Modal isOpen={modalIsOpen}>
+          <div>
+            <button onClick={() => setModalIsOpen(false)}>X</button>
+          </div>
+          <h2>Fresh Modal</h2>
+          <p>
+            Id reprehenderit proident fugiat cillum consectetur. Non mollit
+            occaecat id nisi eu non exercitation nulla. Ullamco amet
+            exercitation culpa reprehenderit magna exercitation. Id officia
+            dolor nulla mollit sint. Aliquip excepteur aute excepteur enim anim
+            ea et ad aliqua proident occaecat culpa mollit Lorem.{" "}
+          </p>
+        </Modal>
+
         <svg
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -23,9 +39,7 @@ const Nav = () => {
           <title> Supers Cafe | Navigation Hub</title>
           <g>
             {/* <NavGroup /> */}
-            <a href="https://supers.cafe/info">
-              <Info />
-            </a>
+            <Info onClick={() => setModalIsOpen(true)} />
             <a href="https://blog.supers.cafe/instruct">
               <Instruct />
             </a>
@@ -35,9 +49,8 @@ const Nav = () => {
             <a href="https://blog.supers.cafe/projects">
               <Projects />
             </a>
-            <a href="https://supers.cafe/resume">
-              <Resume />
-            </a>
+
+            <Resume />
           </g>
         </svg>
       </nav>
