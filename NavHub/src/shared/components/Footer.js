@@ -8,9 +8,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Modal from "react-modal";
-// import LineModal from "./LineModal";
-
-// import SiteWarning from "/src/shared/assets/svg/footer/SUD.svg";
 
 import Git from "/src/shared/assets/svg/footer/Git.svg";
 import LinkedIn from "/src/shared/assets/svg/footer/LinkedIn.svg";
@@ -20,8 +17,8 @@ import Flickr from "/src/shared/assets/svg/footer/Flickr.svg";
 import LineQR from "/src/shared/assets/svg/footer/LineQR.svg";
 import LineID from "/src/shared/assets/svg/footer/LineID.svg";
 
-import SocialGroup from "/src/shared/assets/svg/footer/SocialGroup.svg";
-
+// import SocialGroup from "/src/shared/assets/svg/footer/SocialGroup.svg";
+// import SiteWarning from "/src/shared/assets/svg/footer/SUD.svg";
 const Footer = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
@@ -45,7 +42,7 @@ const Footer = () => {
             <defs> </defs>
             <title> Supers Cafe | Social Links</title>
             <g>
-              <SocialGroup />
+              {/* <SocialGroup /> */}
               <a href="https://github.com/NH3R717">
                 <Git className="socialIcon" />
               </a>
@@ -74,55 +71,32 @@ const Footer = () => {
             style={{
               overlay: {
                 position: "fixed",
-                // width: "100%",
-                // position: "relative",
                 display: "flex",
-                // padding: "1em",
-                alignItems: "center",
                 justifyContent: "center",
-                top: 0,
-                left: 0,
-                right: 0,
-                bottom: 0,
                 backgroundColor: "rgba(255, 255, 255, 0.85)",
               },
               content: {
                 position: "absolute",
-                // display: "flex",
-                // margin: "auto",
-                // alignItems: "center",
-                // top: "";
-                // left: "auto",
-                // right: "",
                 bottom: "10%",
-                // width: "80%",
                 height: "auto",
                 maxWidth: "400px",
-                // maxWidth: "300px",
-                // border: "1px solid #ccc",
-                background: "rgba(255, 255, 255, 0)",
-                overflow: "auto",
+                background: "rgba(255, 255, 255, .2)",
                 WebkitOverflowScrolling: "touch",
-                borderRadius: "4px",
-                outline: "none",
+                borderRadius: "2em",
                 padding: "1.5em",
               },
             }}
           >
-            {/* <div>
-              <button onClick={() => setModalIsOpen(false)}>X</button>
-            </div> */}
             <LineQR
               style={{
                 height: "auto",
                 width: "100%",
-                justifyContent: "space-between",
-                border: "1px solid #5A5A5A",
+                border: "2px solid #5A5A5A",
                 borderRadius: "4px",
               }}
             />
             <LineID
-              style={{ marginTop: ".3em", height: "auto", width: "101%" }}
+              style={{ marginTop: ".5em", height: "auto", width: "101%" }}
             />
           </Modal>
         </div>
@@ -137,23 +111,17 @@ const Footer = () => {
 
 const Wrapper = styled.section`
   footer {
-    color: #5c5c5c;
     display: flex;
     justify-content: center;
     margin: -1.4em -0.6em 1.8em -0.6em;
     border-top: 0.2em solid #5a5a5a;
-    /* margin: 1.8em -0.6em; */
-    /* height: 588px; */
-    /* width: 100%; */
-    /* position: fixed; */
-    /* bottom: 0; */
   }
   a {
     height: 100%;
   }
   p {
-    padding: 0 1em 0 0;
-    float: right;
+    /* padding: 0 1em 0 0;
+    float: right; */
   }
   /* .copyContainer {
     margin-top: 1.5em;
@@ -166,22 +134,8 @@ const Wrapper = styled.section`
     margin-top: 1em;
   }
   @media all and (max-width: 400px) {
-    /* .socialIcon {
-      height: 2.5em;
-      width: 2.5em;
-    } */
-    /* #siteUnderDevLeft {
-      height: auto;
-      width: 60em;
-    } */
   }
   @media all and (min-width: 401px) {
-    /* .socialIcon {
-      height: 3.5em;
-      width: 3.5em;
-    } */
-    /* #siteUnderDevLeft {
-    } */
   }
   .socialContainer {
     width: 30em;
@@ -198,11 +152,6 @@ const Wrapper = styled.section`
   .socialIcon {
     padding: 0.3em 0.4em 0em 0.4em;
     justify-content: space-between;
-  }
-  .modalContainer {
-    /* width: 30em;
-    margin: 0em 1em;
-    align-items: center; */
   }
   /* #siteUnderDevContainer {
     width: 20em;

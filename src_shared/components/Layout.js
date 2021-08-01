@@ -1,6 +1,7 @@
 //! edit from web_supers/src_shared – run command "npm run rsync"
 
 import React from "react";
+
 import Header from "./Header";
 import Footer from "./Footer";
 import styled from "styled-components";
@@ -13,7 +14,7 @@ const Layout = ({ children }) => {
     <React.Fragment>
       <Wrapper>
         <Header />
-        {/* below doesnt work with Safari */}
+        {/* below solution for footer push on high screens – doesn't work with Safari */}
         {/* <section className="content_push">
           <article className="site_content">{children}</article>
         </section> */}
@@ -24,14 +25,16 @@ const Layout = ({ children }) => {
   );
 };
 const Wrapper = styled.section`
+  /* below solution for footer push on high screens – doesn't work with Safari */
   .content_push {
-    display: flex;
+    /* display: flex;
     min-height: 100vh;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-around; */
   }
 
   .site_content {
+    /* below solution for footer push on high screens – doesn't work with Safari */
     /* height: 100vh; */
     /* flex-grow: 1; */
     align-items: center;

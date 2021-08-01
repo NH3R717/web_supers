@@ -15,7 +15,6 @@ const Header = () => {
             <LogoFull id="fullLogo" />
             <LogoMini id="miniLogo" />
           </a>
-          {/* <h1>Supers Cafe</h1> */}
         </section>
         <section className="right"></section>
       </header>
@@ -47,14 +46,12 @@ const Wrapper = styled.section`
       margin: 0.6em 3em 0 2em;
     }
   }
+  /* below for mobile tap box presentation */
   a {
     height: 3em;
     padding-top: 2.5em;
   }
   .right {
-    /* width: 50%; */
-  }
-  .left {
   }
 `;
 
