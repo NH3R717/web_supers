@@ -68,7 +68,7 @@ const Footer = () => {
             isOpen={modalIsOpen}
             onRequestClose={() => setModalIsOpen(false)}
             contentLabel={"Line ID"}
-            role="Line ID"
+            // role="Line ID"
             preventScroll={true}
             // appElement={Info}
             style={{
