@@ -3,7 +3,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import SiteWarning from "/src/shared/assets/svg/footer/SUD.svg";
+// import SiteWarning from "/src/shared/assets/svg/footer/SUD.svg";
 
 import Git from "/src/shared/assets/svg/footer/Git.svg";
 import LinkedIn from "/src/shared/assets/svg/footer/LinkedIn.svg";
