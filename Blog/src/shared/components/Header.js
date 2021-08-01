@@ -29,7 +29,7 @@ const Wrapper = styled.section`
     flex-wrap: nowrap;
     margin: 0 -0.6em -1em;
     padding: 0.2em 0 0.5em 0;
-    border-bottom: 2px solid red;
+    border-bottom: 0.2em solid #5a5a5a;
   }
   @media all and (max-width: 400px) {
     #fullLogo {

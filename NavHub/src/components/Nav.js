@@ -1,3 +1,9 @@
+// ToDo about modal
+// ToDo about content
+// ToDo nav icon advance (animation, detail [redraw])
+// ToDo cloud header
+// ToDo ocean footer
+
 import React, { useState } from "react"
 import Modal from "react-modal"
 import styled from "styled-components"
@@ -21,6 +27,9 @@ const Nav = () => {
             className="modal"
             isOpen={modalIsOpen}
             onRequestClose={() => setModalIsOpen(false)}
+            contentLabel={"Line ID"}
+            role="Line ID"
+            preventScroll={true}
             // appElement={Info}
             style={{
               overlay: {

@@ -1,7 +1,14 @@
 //! edit from web_supers/src_shared – run command "npm run rsync"
 
-import React from "react";
+// ToDo add copy line id to clipboard
+// ToDo clean-up comments
+// ToDo
+// ToDo
+
+import React, { useState } from "react";
 import styled from "styled-components";
+import Modal from "react-modal";
+// import LineModal from "./LineModal";
 
 // import SiteWarning from "/src/shared/assets/svg/footer/SUD.svg";
 
@@ -10,10 +17,13 @@ import LinkedIn from "/src/shared/assets/svg/footer/LinkedIn.svg";
 import Line from "/src/shared/assets/svg/footer/Line.svg";
 import Yt from "/src/shared/assets/svg/footer/YT.svg";
 import Flickr from "/src/shared/assets/svg/footer/Flickr.svg";
+import LineQR from "/src/shared/assets/svg/footer/LineQR.svg";
+import LineID from "/src/shared/assets/svg/footer/LineID.svg";
 
 import SocialGroup from "/src/shared/assets/svg/footer/SocialGroup.svg";
 
 const Footer = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
     <Wrapper>
       {/* <section id="siteUnderDevContainer">
@@ -42,9 +52,10 @@ const Footer = () => {
               <a href="https://www.linkedin.com/in/tomas-umholtz/">
                 <LinkedIn className="socialIcon" />
               </a>
-              <a href="/">
-                <Line className="socialIcon" />
-              </a>
+              <Line
+                onClick={() => setModalIsOpen(true)}
+                className="socialIcon"
+              />
               <a href="https://www.youtube.com/channel/UC3vEEPENX59c2vOCvse-ttw">
                 <Yt className="socialIcon" />
               </a>
@@ -53,6 +64,67 @@ const Footer = () => {
               </a>
             </g>
           </svg>
+        </div>
+        <div className="modalContainer" onClick={() => setModalIsOpen(false)}>
+          <Modal
+            className="modal"
+            isOpen={modalIsOpen}
+            onRequestClose={() => setModalIsOpen(false)}
+            // appElement={Info}
+            style={{
+              overlay: {
+                position: "fixed",
+                // width: "100%",
+                // position: "relative",
+                display: "flex",
+                // padding: "1em",
+                alignItems: "center",
+                justifyContent: "center",
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                backgroundColor: "rgba(255, 255, 255, 0.85)",
+              },
+              content: {
+                position: "absolute",
+                // display: "flex",
+                // margin: "auto",
+                // alignItems: "center",
+                // top: "";
+                // left: "auto",
+                // right: "",
+                bottom: "10%",
+                // width: "80%",
+                height: "auto",
+                maxWidth: "400px",
+                // maxWidth: "300px",
+                // border: "1px solid #ccc",
+                background: "rgba(255, 255, 255, 0)",
+                overflow: "auto",
+                WebkitOverflowScrolling: "touch",
+                borderRadius: "4px",
+                outline: "none",
+                padding: "1.5em",
+              },
+            }}
+          >
+            {/* <div>
+              <button onClick={() => setModalIsOpen(false)}>X</button>
+            </div> */}
+            <LineQR
+              style={{
+                height: "auto",
+                width: "100%",
+                justifyContent: "space-between",
+                border: "1px solid #5A5A5A",
+                borderRadius: "4px",
+              }}
+            />
+            <LineID
+              style={{ marginTop: ".3em", height: "auto", width: "101%" }}
+            />
+          </Modal>
         </div>
         {/* </div> */}
         {/* <div className="copyContainer">
@@ -65,17 +137,16 @@ const Footer = () => {
 
 const Wrapper = styled.section`
   footer {
-    /* font-family: "Comfortaa"; */
     color: #5c5c5c;
     display: flex;
-    /* height: 588px; */
-    /* width: 100%; */
     justify-content: center;
     margin: -1.4em -0.6em 1.8em -0.6em;
+    border-top: 0.2em solid #5a5a5a;
     /* margin: 1.8em -0.6em; */
-    border-top: 2px solid red;
-    /* position: fixed;
-    bottom: 0; */
+    /* height: 588px; */
+    /* width: 100%; */
+    /* position: fixed; */
+    /* bottom: 0; */
   }
   a {
     height: 100%;
@@ -94,7 +165,6 @@ const Wrapper = styled.section`
     justify-content: space-between;
     margin-top: 1em;
   }
-  /* display: flex; */
   @media all and (max-width: 400px) {
     /* .socialIcon {
       height: 2.5em;
@@ -128,6 +198,11 @@ const Wrapper = styled.section`
   .socialIcon {
     padding: 0.3em 0.4em 0em 0.4em;
     justify-content: space-between;
+  }
+  .modalContainer {
+    /* width: 30em;
+    margin: 0em 1em;
+    align-items: center; */
   }
   /* #siteUnderDevContainer {
     width: 20em;
