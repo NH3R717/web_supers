@@ -71,7 +71,6 @@ const Footer = () => {
             role="Line ID"
             preventScroll={true}
             // appElement={Info}
-            // appElement={Info}
             style={{
               overlay: {
                 position: "fixed",
