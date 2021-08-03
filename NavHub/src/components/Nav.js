@@ -25,11 +25,16 @@ const Nav = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
   return (
     <Wrapper>
-      <div className="modalDiv" onClick={() => setModalIsOpen(false)}>
+      <div
+        // role="button"
+        className="modalDiv"
+        // onClick={() => setModalIsOpen(false)}
+      >
         <Modal
           className="modal"
           isOpen={modalIsOpen}
           onRequestClose={() => setModalIsOpen(false)}
+          onKeyPress={() => setModalIsOpen(false)}
           preventScroll={true}
           // appElement={Info}
           style={{
@@ -38,7 +43,6 @@ const Nav = () => {
               display: "flex",
               margin: "0em",
               alignItems: "center",
-
               justifyContent: "center",
               top: 0,
               left: 0,
@@ -49,7 +53,7 @@ const Nav = () => {
             content: {
               position: "absolute",
               bottom: "0",
-              margin: "1em",
+              margin: "auto",
               top: "4em",
               maxWidth: "800px",
               maxHeight: "600px",

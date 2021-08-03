@@ -62,14 +62,20 @@ const Footer = () => {
             </g>
           </svg>
         </div>
-        <div className="modalContainer" onClick={() => setModalIsOpen(false)}>
+        <div
+          className="modalContainer"
+          onClick={() => setModalIsOpen(false)}
+          onKeyPress={() => setModalIsOpen(false)}
+          role="article"
+        >
           <Modal
             className="modal"
             isOpen={modalIsOpen}
+            onClick={() => setModalIsOpen(false)}
             onRequestClose={() => setModalIsOpen(false)}
             contentLabel={"Line ID"}
             // role="Line ID"
-            preventScroll={true}
+            // preventScroll={true}
             // appElement={Info}
             style={{
               overlay: {
@@ -94,8 +100,8 @@ const Footer = () => {
               style={{
                 height: "auto",
                 width: "100%",
-                border: "2px solid #5A5A5A",
-                borderRadius: "4px",
+                // border: "2px solid #5A5A5A",
+                // borderRadius: "4px",
               }}
             />
             <LineID
@@ -156,6 +162,13 @@ const Wrapper = styled.section`
     padding: 0.3em 0.4em 0em 0.4em;
     justify-content: space-between;
   }
+  .ReactModal__Body--open {
+    overflow: hidden;
+  }
+  .ReactModal__Content .ReactModal__Content--after-open .modal {
+    outline: none;
+  }
+
   /* #siteUnderDevContainer {
     width: 20em;
   } */
