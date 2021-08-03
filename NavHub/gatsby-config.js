@@ -26,14 +26,20 @@ module.exports = {
         path: `${__dirname}/src/assets/`,
       },
     },
+    // {
+    //   resolve: `gatsby-plugin-mdx`,
+    //   options: {
+    //     extensions: [`.mdx`, `.md`],
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {
         fonts: {
           google: [
             {
-              family: "Comfortaa",
-              variants: ["300", "400", "500"],
+              family: "Hind",
+              variants: ["300"],
               fontDisplay: "swap",
               strategy: "selfHosted",
             },
