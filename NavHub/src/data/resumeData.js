@@ -15,13 +15,9 @@ const jobs = [
       "Absolute Components LLC, established in 2017 is a venture in overseas trade and e-commerce, primarily in China and Taiwan. As the owner of this company I am responsible for the following:",
     points: [
       "• Design and develop projects with CMS based platforms such as WordPress, Strapi/Gatsby and Shopify ",
-
       "• Develop and deploy secure hosting solutions on remote Linux servers",
-
       "• Design projects using vector editing and mock-up software such as Adobe Illustrator, Adobe XD and Figma",
-
       "• File for trademarks in the US and China",
-
       "• Source materials, machinery and assembly suppliers in China",
     ],
   },
@@ -35,7 +31,6 @@ const jobs = [
     points: [
       "• Developing curriculum and training software for automotive clients' training programs",
       "– APP content development and user interface and experience (U/I, U/X) design",
-      "",
       "• Training clients within the automotive industry for the following companies:",
       "– Beijing Foton Daimler Automotive (BFDA) –  Beijing, China",
       "– Changan Ford Automotive (CAF) – Harbin, China]",
@@ -73,9 +68,9 @@ const jobs = [
   {
     id: 5,
     title: "Engineer | Photojournalist",
-    company: "US NAvy",
+    company: "US Navy",
     date: "October 1999 – August 2005",
-    location: "Yokosuka, Kanagawa, Japanm Sha Tsui",
+    location: "Yokosuka, Kanagawa, Japan",
     description: "",
     points: [
       "• Photojournalist on board USS Kitty Hawk – Yokosuka, Japan",

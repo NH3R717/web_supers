@@ -35,12 +35,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-webfonts`,
       options: {
+        usePreload: true,
         fonts: {
           google: [
             {
               family: "Hind",
-              variants: ["300"],
-              fontDisplay: "swap",
+              variants: ["regular"],
+              fontDisplay: "block",
               strategy: "selfHosted",
             },
           ],

@@ -1,1 +1,5 @@
 import "./src/shared/css/main.css"
+import "../NavHub/static/Hind-Regular.eot"
+import "../NavHub/static/Hind-Regular.ttf"
+import "../NavHub/static/Hind-Regular.woff"
+import "../NavHub/static/Hind-Regular.woff2"

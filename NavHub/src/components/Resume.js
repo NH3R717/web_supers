@@ -108,7 +108,7 @@ const Wrapper = styled.section`
   span {
   }
   h1 {
-    margin-top: 2em;
+    margin-top: 1.5em;
     font-size: 2.35em;
     color: ${colors.DarkGrey};
   }
@@ -130,7 +130,7 @@ const Wrapper = styled.section`
     font-size: 1.2em;
   }
   #about {
-    margin-bottom: 2em;
+    margin-bottom: -0em;
   }
   #skill-container {
     margin-bottom: 2em;
