@@ -6,73 +6,54 @@
 // ToDo prevent scroll while modal
 // ToDo
 
+// import React from "react"
+// import { useState } from "react"
 import React, { useState } from "react"
 import Modal from "react-modal"
+import { Link } from "gatsby"
+import { AboutContent, style } from "./modals/AboutModal"
+// import { style } from "./modals/ResumeModal"
+
 import styled from "styled-components"
 
-// import { Info, Instruct, Blog, Projects, Resume } from "/src/assets/svg/nav"
-import ResumeData from "/src/components/modals/ResumeModal.js"
 import Info from "/src/assets/svg/nav/info.svg"
 import Instruct from "/src/assets/svg/nav/instruct.svg"
 import Blog from "/src/assets/svg/nav/blog.svg"
 import Projects from "/src/assets/svg/nav/projects.svg"
 import Resume from "/src/assets/svg/nav/resume.svg"
 
+// Modal.setAppElement("#root")
 // import NavGroup from "/src/assets/SVG/nav/navGroup.svg"
-// Modal.setAppElemen("#root")
-// Modal.defaultStyles
+
 const Nav = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
   return (
     <Wrapper>
-      <div
-        // role="button"
-        className="modalDiv"
-        // onClick={() => setModalIsOpen(false)}
+      <Modal
+        // preventScroll={true}
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+        onKeyPress={() => setModalIsOpen(false)}
+        style={style}
       >
-        <Modal
-          className="modal"
-          isOpen={modalIsOpen}
-          onRequestClose={() => setModalIsOpen(false)}
-          onKeyPress={() => setModalIsOpen(false)}
-          preventScroll={true}
-          // appElement={Info}
-          style={{
-            overlay: {
-              position: "fixed",
-              display: "flex",
-              margin: "0em",
-              alignItems: "center",
-              justifyContent: "center",
-              top: 0,
-              left: 0,
-              right: 0,
-              bottom: 0,
-              backgroundColor: "rgba(255, 255, 255, 0.60)",
-            },
-            content: {
-              position: "absolute",
-              bottom: "0",
-              margin: "auto",
-              top: "4em",
-              maxWidth: "800px",
-              maxHeight: "600px",
-              border: "1px solid #ccc",
-              background: "rgba(255, 255, 255, 0.98)",
-              overflow: "auto",
-              WebkitOverflowScrolling: "touch",
-              borderRadius: "4px",
-              outline: "none",
-              padding: "20px",
-            },
-          }}
-        >
-          <div>
-            <button onClick={() => setModalIsOpen(false)}>X</button>
-          </div>
-          <ResumeData />
-        </Modal>
-      </div>
+        <div>
+          <button onClick={() => setModalIsOpen(false)}>X</button>
+        </div>
+        <AboutContent />
+      </Modal>
+      {/* <Modal
+        // preventScroll={true}
+        isOpen={modalIsOpen}
+        onRequestClose={() => setModalIsOpen(false)}
+        onKeyPress={() => setModalIsOpen(false)}
+        style={style}
+      >
+        <div>
+          <button onClick={() => setModalIsOpen(false)}>X</button>
+        </div>
+        <h1>ABC</h1>
+      </Modal> */}
+      <Modal></Modal>
       <nav className="viewbox_container">
         <svg
           version="1.1"
@@ -84,7 +65,7 @@ const Nav = () => {
           <title> Supers Cafe | Navigation Hub</title>
           <g>
             {/* <NavGroup /> */}
-            <Info onClick={() => setModalIsOpen(true)} />
+            <Info onClick={a => setModalIsOpen(true)} />
             <a href="https://blog.supers.cafe/instruct">
               <Instruct />
             </a>
@@ -94,7 +75,9 @@ const Nav = () => {
             <a href="https://blog.supers.cafe/projects">
               <Projects />
             </a>
-            <Resume />
+            <Link to="/resume">
+              <Resume />
+            </Link>
           </g>
         </svg>
       </nav>
