@@ -41,19 +41,6 @@ const Nav = () => {
         </div>
         <AboutContent />
       </Modal>
-      {/* <Modal
-        // preventScroll={true}
-        isOpen={modalIsOpen}
-        onRequestClose={() => setModalIsOpen(false)}
-        onKeyPress={() => setModalIsOpen(false)}
-        style={style}
-      >
-        <div>
-          <button onClick={() => setModalIsOpen(false)}>X</button>
-        </div>
-        <h1>ABC</h1>
-      </Modal> */}
-      <Modal></Modal>
       <nav className="viewbox_container">
         <svg
           version="1.1"
@@ -70,7 +57,7 @@ const Nav = () => {
               <Instruct />
             </a>
             <a href="https://blog.supers.cafe/personal">
-              <Blog />
+              <Blog className="overlay" />
             </a>
             <a href="https://blog.supers.cafe/projects">
               <Projects />
@@ -107,6 +94,9 @@ const Wrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .overlay {
+    color: rgba(255, 255, 255, 0.8);
   }
 `
 
