@@ -51,7 +51,9 @@ const Wrapper = styled.section`
     height: 3em;
     padding-top: 2.5em;
   }
-  .right {
+  #miniLogo {
+    height: 45px;
+    width: auto;
   }
 `;
 
