@@ -51,7 +51,7 @@ const ResumeContent = () => {
             })}
           </div>
 
-          <div>
+          <div id="education">
             <h1>Education</h1>
             {educations.map(education => {
               const { id, school, degree, major, graduated, descriptions } =
@@ -107,7 +107,7 @@ const Wrapper = styled.section`
     color: ${colors.BrandGreyDark};
   }
   h2 {
-    margin: 1.8em 0 0.3em 0;
+    margin: 1.4em 0 0em 0em;
     color: ${colors.BrandGreyMid};
     font-size: 1.6em;
   }
@@ -121,13 +121,19 @@ const Wrapper = styled.section`
     color: ${colors.BrandGreyDarker};
   }
   li {
-    color: ${colors.BrandNotBlack};
+    /* color: ${colors.BrandNotBlack}; */
+    color: ${colors.IconOrange};
     list-style: none;
     font-size: 1.2em;
   }
   #about {
     margin-bottom: -0em;
     color: ${colors.BrandGreyMid};
+  }
+  #education {
+    h3 {
+      color: ${colors.IconOrange};
+    }
   }
   #skill-container {
     margin-bottom: 2em;

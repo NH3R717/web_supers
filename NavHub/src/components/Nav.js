@@ -37,7 +37,7 @@ const Nav = () => {
         onKeyPress={() => setModalIsOpen(false)}
         style={style}
       >
-        <div>
+        <div id="closeBttn">
           <CloseButton onClick={() => setModalIsOpen(false)}></CloseButton>
         </div>
         <AboutContent />
@@ -75,12 +75,16 @@ const Nav = () => {
 
 const Wrapper = styled.section`
   /* background-color: pink; */
+
   nav {
     /* display: flex;
     min-height: 100%;
     flex: 1; */
     margin-top: 100px;
     position: relative;
+  }
+  #closeBttn {
+    margin-left: -1em;
   }
   .viewbox_container {
     /* width: 100%; */
