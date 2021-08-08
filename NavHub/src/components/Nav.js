@@ -21,6 +21,7 @@ import Instruct from "/src/assets/svg/nav/instruct.svg"
 import Blog from "/src/assets/svg/nav/blog.svg"
 import Projects from "/src/assets/svg/nav/projects.svg"
 import Resume from "/src/assets/svg/nav/resume.svg"
+import CloseButton from "../shared/components/CloseButton"
 
 // Modal.setAppElement("#root")
 // import NavGroup from "/src/assets/SVG/nav/navGroup.svg"
@@ -37,7 +38,7 @@ const Nav = () => {
         style={style}
       >
         <div>
-          <button onClick={() => setModalIsOpen(false)}>X</button>
+          <CloseButton onClick={() => setModalIsOpen(false)}></CloseButton>
         </div>
         <AboutContent />
       </Modal>
