@@ -18,17 +18,17 @@ import LineQR from "/src/shared/assets/svg/footer/LineQR.svg";
 import LineID from "/src/shared/assets/svg/footer/LineID.svg";
 
 // import SocialGroup from "/src/shared/assets/svg/footer/SocialGroup.svg";
-// import SiteWarning from "/src/shared/assets/svg/footer/SUD.svg";
+import SiteWarning from "/src/shared/assets/svg/footer/SUD.svg";
 const Footer = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   return (
     <Wrapper>
-      {/* <section id="siteUnderDevContainer">
+      <section id="siteUnderDevContainer">
         <span id="siteUnderDevLeft">
           <SiteWarning id="siteUnderDev" />
         </span>
         <div id="siteUnderDevRight"> </div>
-      </section> */}
+      </section>
       <footer>
         <div className="socialContainer">
           {/* <div className="iconContainer"> */}
@@ -169,25 +169,26 @@ const Wrapper = styled.section`
     outline: none;
   }
 
-  /* #siteUnderDevContainer {
-    width: 20em;
-  } */
-  /* #siteUnderDevLeft {
+  #siteUnderDevContainer {
+    width: 100%;
+  }
+  #siteUnderDevLeft {
     display: flex;
-    margin-top: -2em;
+    margin-top: -4em;
     padding: 0 0 2em 2em;
+    height: 3em;
     width: 100%;
     justify-content: left;
-  } */
-  /* #siteUnderDevRight {
+  }
+  #siteUnderDevRight {
     width: 100%;
-  } */
-  /* #siteUnderDev {
+  }
+  #siteUnderDev {
     display: flex;
     margin-top: 2em;
     width: 100%;
     justify-content: left;
-  } */
+  }
 `;
 
 export default Footer;
