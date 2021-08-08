@@ -122,7 +122,7 @@ const Wrapper = styled.section`
   footer {
     display: flex;
     justify-content: center;
-    margin: -1.4em -0.6em 1.8em -0.6em;
+    margin: -1.4em -0.6em 0em -0.6em;
     border-top: 0.2em solid #5a5a5a;
   }
   a {
@@ -148,7 +148,7 @@ const Wrapper = styled.section`
   }
   .socialContainer {
     width: 30em;
-    margin: 0em 1em;
+    margin: 0em 1em 2em 1em;
     align-items: center;
     /* flex-shrink: 0; */
   }
