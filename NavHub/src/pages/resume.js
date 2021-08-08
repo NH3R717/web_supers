@@ -16,8 +16,5 @@ const Wrapper = styled.section`
   div {
     /* color: darkorange; */
   }
-  .text {
-    text-transform: uppercase;
-  }
 `
 export default resume

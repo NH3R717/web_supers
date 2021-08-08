@@ -1,6 +1,4 @@
 import React from "react"
-// import Modal from "react-modal"
-// import Nav from "../Nav"
 import styled from "styled-components"
 import { colors } from "../../../src_shared/constants/variables"
 
@@ -13,8 +11,6 @@ import {
   educations,
   skills,
 } from "../data/resumeData"
-
-// Modal.setAppElement("#root")
 
 const ResumeContent = () => {
   return (
@@ -87,8 +83,6 @@ const ResumeContent = () => {
     </Wrapper>
   )
 }
-console.log("LOG POINTS: ", jobs.map)
-console.log("LOG SKILLS: ", skills)
 const Wrapper = styled.section`
   @media all and (max-width: 400px) {
   }

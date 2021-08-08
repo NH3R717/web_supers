@@ -56,7 +56,7 @@ const jobs = [
     title: "Merchant Mariner – Refrigeration Engineer",
     company: "Military Sealift Command",
     date: "January 2006 – September 2010",
-    location: "San Diego, California, United States",
+    location: "San Diego, California, USA",
     description: "",
     points: [
       "• Senior Shipboard Refrigeration Engineer",
