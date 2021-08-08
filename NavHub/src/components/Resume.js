@@ -104,27 +104,30 @@ const Wrapper = styled.section`
   h1 {
     margin-top: 1.5em;
     font-size: 2.35em;
-    color: ${colors.DarkGrey};
+    color: ${colors.BrandGreyDark};
   }
   h2 {
     margin: 1.8em 0 0.3em 0;
-    color: ${colors.LightGrey};
+    color: ${colors.BrandGreyMid};
     font-size: 1.6em;
   }
   h3 {
     margin: 0.3em 0.2em;
-    color: ${colors.LightGrey};
+    color: ${colors.BrandGreyLight};
     font-size: 1.2em;
   }
   p {
     font-size: 1.2em;
+    color: ${colors.BrandGreyDarker};
   }
   li {
+    color: ${colors.BrandNotBlack};
     list-style: none;
     font-size: 1.2em;
   }
   #about {
     margin-bottom: -0em;
+    color: ${colors.BrandGreyMid};
   }
   #skill-container {
     margin-bottom: 2em;
