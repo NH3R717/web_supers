@@ -1,5 +1,3 @@
-// ToDo – npm i body-scroll-lock
-
 import React from "react"
 import styled from "styled-components"
 import { colors } from "../../shared/constants/variables"
@@ -47,7 +45,12 @@ const Wrapper = styled.section`
     padding-left: 0.5em;
   }
   h1 {
-    text-decoration: underline solid ${colors.BrandSeaFoam} 0.15em;
+    /* no shorthand for Safari */
+    /* text-decoration: underline solid ${colors.BrandSeaFoam} 0.15em; */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: ${colors.BrandSeaFoam};
+    text-decoration-thickness: 0.1em;
   }
   h1,
   h2 {

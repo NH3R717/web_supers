@@ -3,7 +3,7 @@
 // ToDo nav icon advance (animation, detail [redraw])
 // ToDo cloud header
 // ToDo ocean footer
-// ToDo prevent scroll while modal
+// ToDo – npm i body-scroll-lock / https://www.gatsbyjs.com/docs/how-to/performance/improving-site-performance/
 // ToDo
 
 // import React from "react"
