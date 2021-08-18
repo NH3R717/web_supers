@@ -11,7 +11,7 @@ const Header = () => {
     <Wrapper>
       <header>
         <section className="left">
-          <a href="https://supers.cafe">
+          <a href="/">
             <LogoFull id="fullLogo" />
             <LogoMini id="miniLogo" />
           </a>
