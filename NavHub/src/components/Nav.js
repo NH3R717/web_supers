@@ -57,7 +57,7 @@ const Nav = () => {
             <a href="https://blog.supers.cafe/instruct">
               <Instruct />
             </a>
-            <a href="https://blog.supers.cafe/personal">
+            <a href="https://blog.supers.cafe/">
               <Blog className="overlay" />
             </a>
             <a href="https://blog.supers.cafe/projects">

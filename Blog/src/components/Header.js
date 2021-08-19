@@ -11,7 +11,7 @@ const Header = () => {
     <Wrapper>
       <header>
         <section className="left">
-          <a href="/">
+          <a href="https://supers.cafe">
             <LogoFull id="fullLogo" />
             <LogoMini id="miniLogo" />
           </a>
@@ -56,7 +56,7 @@ const Wrapper = styled.section`
     width: auto;
   }
   #miniLogo {
-    height: 45px;
+    height: 2em;
     width: auto;
   }
 `

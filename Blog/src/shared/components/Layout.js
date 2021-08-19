@@ -1,13 +1,13 @@
 //! edit from web_supers/src_shared – run command "npm run rsync"
 
-import React from "react"
+import React from "react";
 
-import Header from "../../components/Header"
-import Footer from "../../components/Footer"
-import styled from "styled-components"
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import styled from "styled-components";
 
-import "@csstools/normalize.css"
-import "/src/shared/css/main.css"
+import "@csstools/normalize.css";
+import "/src/shared/css/main.css";
 
 const Layout = ({ children }) => {
   return (
@@ -22,8 +22,8 @@ const Layout = ({ children }) => {
         <Footer />
       </Wrapper>
     </React.Fragment>
-  )
-}
+  );
+};
 const Wrapper = styled.section`
   /* below solution for footer push on high screens – doesn't work with Safari */
   .content_push {
@@ -41,6 +41,6 @@ const Wrapper = styled.section`
     justify-content: center;
     display: flex;
   }
-`
+`;
 
-export default Layout
+export default Layout;

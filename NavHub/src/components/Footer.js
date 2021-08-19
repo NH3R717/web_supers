@@ -9,13 +9,13 @@ import React, { useState } from "react"
 import styled from "styled-components"
 import Modal from "react-modal"
 
-// import Git from "/src/shared/assets/svg/footer/Git.svg";
-// import LinkedIn from "/src/shared/assets/svg/footer/LinkedIn.svg";
-// import Line from "/src/shared/assets/svg/footer/Line.svg";
-// import Yt from "/src/shared/assets/svg/footer/YT.svg";
-// import Flickr from "/src/shared/assets/svg/footer/Flickr.svg";
-// import LineQR from "/src/shared/assets/svg/footer/LineQR.svg";
-// import LineID from "/src/shared/assets/svg/footer/LineID.svg";
+import Git from "../assets/svg/footer/Git.svg"
+import LinkedIn from "../assets/svg/footer/LinkedIn.svg"
+import Line from "/src/shared/assets/svg/footer/Line.svg"
+import Yt from "/src/shared/assets/svg/footer/YT.svg"
+import Flickr from "/src/shared/assets/svg/footer/Flickr.svg"
+import LineQR from "/src/shared/assets/svg/footer/LineQR.svg"
+import LineID from "/src/shared/assets/svg/footer/LineID.svg"
 
 // import SocialGroup from "/src/shared/assets/svg/footer/SocialGroup.svg";
 import SiteWarning from "/src/shared/assets/svg/footer/SUD.svg"
