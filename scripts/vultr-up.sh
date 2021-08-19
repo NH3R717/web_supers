@@ -1,0 +1,1 @@
+/Volumes/CLE/web_current/Vultr/VPS_UP/vultr_script/vultr-up.sh
