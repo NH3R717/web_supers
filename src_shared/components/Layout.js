@@ -3,7 +3,7 @@
 import React from "react";
 
 import Header from "./Header";
-import Footer from "./Footer";
+import Footer from "../../NavHub/src/components/Footer";
 import styled from "styled-components";
 
 import "@csstools/normalize.css";
