@@ -30,6 +30,85 @@ const Footer = () => {
         <div id="siteUnderDevRight"> </div>
       </section>
       <footer>
+        <div className="socialContainer">
+          {/* <div className="iconContainer"> */}
+          <svg
+            className="iconContainer"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            metadata=""
+            viewBox="0 0 505 65"
+          >
+            <defs> </defs>
+            <title> Supers Cafe | Social Links</title>
+            <g>
+              {/* <SocialGroup /> */}
+              <a href="https://github.com/NH3R717">
+                <Git className="socialIcon" />
+              </a>
+              <a href="https://www.linkedin.com/in/tomas-umholtz/">
+                <LinkedIn className="socialIcon" />
+              </a>
+              <Line
+                onClick={() => setModalIsOpen(true)}
+                className="socialIcon"
+              />
+              <a href="https://www.youtube.com/channel/UC3vEEPENX59c2vOCvse-ttw">
+                <Yt className="socialIcon" />
+              </a>
+              <a href="https://www.flickr.com/photos/tommybahama604/">
+                <Flickr className="socialIcon" />
+              </a>
+            </g>
+          </svg>
+        </div>
+        <div
+          className="modalContainer"
+          onClick={() => setModalIsOpen(false)}
+          onKeyPress={() => setModalIsOpen(false)}
+          role="article"
+        >
+          <Modal
+            className="modal"
+            isOpen={modalIsOpen}
+            onClick={() => setModalIsOpen(false)}
+            onRequestClose={() => setModalIsOpen(false)}
+            contentLabel={"Line ID"}
+            // role="Line ID"
+            // preventScroll={true}
+            // appElement={Info}
+            style={{
+              overlay: {
+                position: "fixed",
+                display: "flex",
+                justifyContent: "center",
+                backgroundColor: "rgba(255, 255, 255, 0.85)",
+              },
+              content: {
+                position: "absolute",
+                bottom: "10%",
+                height: "auto",
+                maxWidth: "400px",
+                background: "rgba(255, 255, 255, .2)",
+                WebkitOverflowScrolling: "touch",
+                borderRadius: "2em",
+                padding: "1.5em",
+              },
+            }}
+          >
+            <LineQR
+              style={{
+                height: "auto",
+                width: "100%",
+                // border: "2px solid #5A5A5A",
+                // borderRadius: "4px",
+              }}
+            />
+            <LineID
+              style={{ marginTop: ".5em", height: "auto", width: "101%" }}
+            />
+          </Modal>
+        </div>
         {/* </div> */}
         {/* <div className="copyContainer">
           <p>© Supers Cafe</p>

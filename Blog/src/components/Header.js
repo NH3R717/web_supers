@@ -1,10 +1,10 @@
 //! edit from web_supers/src_shared – run command "npm run rsync"
 
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
-import LogoFull from "/src/shared/assets/svg/header/scLogoFull.svg";
-import LogoMini from "/src/shared/assets/svg/header/scLogoMini.svg";
+import LogoFull from "../assets/svg/header/scLogoFull.svg"
+import LogoMini from "../assets/svg/header/scLogoMini.svg"
 
 const Header = () => {
   return (
@@ -19,15 +19,15 @@ const Header = () => {
         <section className="right"></section>
       </header>
     </Wrapper>
-  );
-};
+  )
+}
 
 const Wrapper = styled.section`
   header {
     display: flex;
     flex-wrap: nowrap;
     margin: 0 -0.6em -1em;
-    padding: 0.2em 0 0.5em 0;
+    padding: 0em 0 0.2em 0;
     border-bottom: 0.2em solid #5a5a5a;
   }
   @media all and (max-width: 400px) {
@@ -51,10 +51,14 @@ const Wrapper = styled.section`
     height: 3em;
     padding-top: 2.5em;
   }
+  #fullLogo {
+    height: 2em;
+    width: auto;
+  }
   #miniLogo {
     height: 45px;
     width: auto;
   }
-`;
+`
 
-export default Header;
+export default Header
