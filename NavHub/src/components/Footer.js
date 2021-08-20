@@ -148,13 +148,13 @@ const Wrapper = styled.section`
   }
   .socialContainer {
     width: 30em;
-    margin: 0em 1em 2em 1em;
+    margin: 0em 1em 1.5em 1em;
     align-items: center;
     /* flex-shrink: 0; */
   }
   .iconContainer {
     display: flex;
-    margin-top: 2em;
+    margin-top: 1.5em;
     width: 100%;
     justify-content: space-between;
   }

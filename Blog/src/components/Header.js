@@ -27,7 +27,7 @@ const Wrapper = styled.section`
     display: flex;
     flex-wrap: nowrap;
     margin: 0 -0.6em -1em;
-    padding: 0em 0 0.2em 0;
+    padding: 0em 0 0.35em 0;
     border-bottom: 0.2em solid #5a5a5a;
   }
   @media all and (max-width: 400px) {
