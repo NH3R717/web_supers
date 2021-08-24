@@ -12,34 +12,42 @@ import "/src/shared/css/main.css";
 const Layout = ({ children }) => {
   return (
     <React.Fragment>
-      <Wrapper>
+      <Wrapper
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          minHeight: "98vh",
+        }}
+      >
+        {/* <section className="content_push"> */}
         <Header />
         {/* below solution for footer push on high screens – doesn't work with Safari */}
-        {/* <section className="content_push">
-          <article className="site_content">{children}</article>
-        </section> */}
-        {children}
+        {/* <article className="site_content">{children}</article> */}
+        <main className="site_content">{children}</main>
+        {/* <h1 className="site_content">Junk</h1> */}
         <Footer />
+        {/* </section> */}
       </Wrapper>
     </React.Fragment>
   );
 };
 const Wrapper = styled.section`
   /* below solution for footer push on high screens – doesn't work with Safari */
-  .content_push {
-    /* display: flex;
+  /* .content_push {
+    display: flex;
     min-height: 100vh;
     flex-direction: column;
-    justify-content: space-around; */
-  }
+    justify-content: space-around;
+  } */
 
   .site_content {
     /* below solution for footer push on high screens – doesn't work with Safari */
     /* height: 100vh; */
     /* flex-grow: 1; */
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    /* display: flex; */
+    flex: 1 0 auto;
   }
 `;
 

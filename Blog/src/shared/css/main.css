@@ -1,7 +1,9 @@
 :root {
-  height: 100%;
+  /* height: 100%; */
   /* --ff-primary: "Comfortaa", sans-serif; */
-  background-color: rgba(251, 205, 92, 0.03);
+  /* background-color: rgba(251, 205, 92, 0.03); */
+  background-color: rgba(255, 235, 205, 0.75);
+  /* background-color: rgba(252, 244, 233, 0.92); */
 }
 html body {
   /* height: 100%; */

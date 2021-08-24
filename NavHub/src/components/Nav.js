@@ -54,10 +54,10 @@ const Nav = () => {
           <g>
             {/* <NavGroup /> */}
             <Info onClick={a => setModalIsOpen(true)} />
-            <a href="https://blog.supers.cafe/instruct">
+            <a href="https://blog.supers.cafe/life">
               <Instruct />
             </a>
-            <a href="https://blog.supers.cafe/">
+            <a href="https://blog.supers.cafe/instruct">
               <Blog className="overlay" />
             </a>
             <a href="https://blog.supers.cafe/projects">
@@ -89,7 +89,7 @@ const Wrapper = styled.section`
   .viewbox_container {
     /* width: 100%; */
     max-width: 818px;
-    margin: 5.5em auto;
+    margin: 6em auto 4.5em auto;
     padding: 0 1.5em;
     box-sizing: border-box;
   }
