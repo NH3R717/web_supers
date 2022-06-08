@@ -120,6 +120,7 @@ const Footer = () => {
 
 const Wrapper = styled.section`
   footer {
+    font-family: "Comfortaa";
     display: flex;
     justify-content: center;
     margin: -1.4em -0.6em 0em -0.6em;

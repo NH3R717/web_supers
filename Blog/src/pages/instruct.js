@@ -1,6 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "/src/shared/components/Layout.js"
+import SideBar from "../components/SideBar"
+
 import InstMock from "../assets/mockup/lessonListMock.png"
 
 import styled from "styled-components"
@@ -10,12 +12,18 @@ const instruct = () => {
     <Wrapper>
       <Layout>
         <section id="columnContainer">
+          <div id="buttons">
+            <SideBar />
+          </div>
           <div id="listContainer">
             <Link to="/instruct_one">
-              <img id="instMock" src={InstMock} alt="simply recipes" />
-              {/* <InstMock id="instMock" /> */}
+              <Link to="/instruct_one">
+                <img id="instMock" src={InstMock} alt="Mockup Image" />
+                {/* <InstMock id="instMock" /> */}
+              </Link>
             </Link>
           </div>
+          <div id="right"></div>
         </section>
       </Layout>
     </Wrapper>
@@ -25,11 +33,10 @@ const instruct = () => {
 const Wrapper = styled.section`
   #columnContainer {
     display: flex;
-    margin: 0 2em 2.25em 2em;
+    margin: 0 1.5em 2.25em 1em;
     /* centers content */
-    justify-content: center;
+    justify-content: space-between;
   }
-
   #listContainer {
     display: flex;
     /* effect multiple items */
@@ -40,6 +47,15 @@ const Wrapper = styled.section`
     max-width: 660px;
     /* no effect */
     /* height: 100%; */
+  }
+  #instructIconContainer {
+  }
+  #buttons {
+    margin: 2em 1em 0 -0.5em;
+    width: 3em;
+  }
+  #right {
+    width: 2em;
   }
   #instMock {
     /* no effect */

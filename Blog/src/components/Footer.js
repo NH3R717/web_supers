@@ -1,11 +1,8 @@
-//! edit from web_supers/src_shared – run command "npm run rsync"
-
 // ToDo add copy line id to clipboard
-// ToDo clean-up comments
 // ToDo
 // ToDo
 
-import React, { useState } from "react"
+import React from "react"
 import styled from "styled-components"
 
 // import SocialGroup from "/src/shared/assets/svg/footer/SocialGroup.svg";
@@ -22,7 +19,10 @@ const Footer = () => {
       <footer>
         <div></div>
         <div className="copyContainer">
-          <p>© Supers Cafe</p>
+          <h4>
+            &copy;{new Date().getFullYear()}
+            <span> Supers Cafe </span>
+          </h4>
         </div>
       </footer>
     </Wrapper>
@@ -31,6 +31,7 @@ const Footer = () => {
 
 const Wrapper = styled.section`
   footer {
+    font-family: "Comfortaa";
     display: flex;
     justify-content: flex-end;
     margin: -1.4em -0.6em 0em -0.6em;
@@ -45,8 +46,6 @@ const Wrapper = styled.section`
   }
   .copyContainer {
     margin-right: 1.5em;
-
-    /* float: right; */
   }
   section {
     display: flex;

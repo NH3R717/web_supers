@@ -15,3 +15,11 @@ body {
   min-height: 100vh;
   flex-direction: column; */
 }
+.toggle-btn {
+  font-size: 2rem;
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-primary-5);
+  cursor: pointer;
+  transition: var(--transition);
+}
